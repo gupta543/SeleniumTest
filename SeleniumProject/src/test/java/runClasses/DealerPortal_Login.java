@@ -27,7 +27,7 @@ public class DealerPortal_Login extends BaseTest{
 		login.enterDealerPassword(usr_pwd);
 		login.dpClickLogin();
 		System.out.println("Login to Dealer Portal is successful");
-		System.out.println("Selenium Maven Git Jenkins Integration successful");
+		System.out.println("Selenium-Maven-Git-Jenkins Integration successful");
 	}
 
 	/*public static void main(String[] args) throws InterruptedException {
