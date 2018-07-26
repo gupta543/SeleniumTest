@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18064" started-at="2018-07-25T12:54:24Z" finished-at="2018-07-25T12:54:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="18064" started-at="2018-07-25T12:54:24Z" finished-at="2018-07-25T12:54:42Z">
+      <class name="runClasses.DealerPortal_Login">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:runClasses.DealerPortal_Login@69d9c55]" name="beforeTest" is-config="true" duration-ms="17180" started-at="2018-07-25T12:54:24Z" finished-at="2018-07-25T12:54:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="DP_Login()[pri:0, instance:runClasses.DealerPortal_Login@69d9c55]" name="DP_Login" duration-ms="863" started-at="2018-07-25T12:54:41Z" finished-at="2018-07-25T12:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DP_Login -->
+      </class> <!-- runClasses.DealerPortal_Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
