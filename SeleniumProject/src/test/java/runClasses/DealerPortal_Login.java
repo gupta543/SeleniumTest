@@ -20,7 +20,7 @@ public class DealerPortal_Login extends BaseTest{
 	
 	
 	@Test
-	public void DP_Login() throws InterruptedException{
+	public void dp_Login() throws InterruptedException{
 		String usr_name = testData.get("User Name");
 		String usr_pwd = testData.get("Password");
 		LoginPage login = PageFactory.initElements(driver, LoginPage.class);

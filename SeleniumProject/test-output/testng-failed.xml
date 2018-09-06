@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runClasses.DealerPortal_Login">
+      <class name="runClasses.PaymentSettingsAdmin">
         <methods>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
-          <include name="DP_Login"/>
+          <include name="dp_PaymentSettings"/>
         </methods>
-      </class> <!-- runClasses.DealerPortal_Login -->
+      </class> <!-- runClasses.PaymentSettingsAdmin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
