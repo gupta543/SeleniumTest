@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55718" started-at="2018-08-21T11:20:59Z" finished-at="2018-08-21T11:21:54Z">
+  <suite name="Suite" duration-ms="16986" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55718" started-at="2018-08-21T11:20:59Z" finished-at="2018-08-21T11:21:54Z">
-      <class name="runClasses.PaymentSettingsAdmin">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:runClasses.PaymentSettingsAdmin@31a5c39e]" name="beforeTest" is-config="true" duration-ms="36425" started-at="2018-08-21T11:20:59Z" finished-at="2018-08-21T11:21:35Z">
+    <test name="Default test" duration-ms="16986" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:11Z">
+      <class name="runClasses.DealerPortal_Login">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="beforeTest" is-config="true" duration-ms="13544" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:07Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -19,80 +19,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.PaymentSettingsAdmin@31a5c39e]" name="beforeMethod" is-config="true" duration-ms="1522" started-at="2018-08-21T11:21:35Z" finished-at="2018-08-21T11:21:37Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="beforeMethod" is-config="true" duration-ms="1095" started-at="2018-09-10T13:42:07Z" finished-at="2018-09-10T13:42:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void runClasses.PaymentSettingsAdmin.dp_Login() throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void runClasses.DealerPortal_Login.dp_Login() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.PaymentSettingsAdmin@31a5c39e]" name="dp_Login" duration-ms="6286" started-at="2018-08-21T11:21:37Z" finished-at="2018-08-21T11:21:43Z">
+        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="dp_Login" duration-ms="2313" started-at="2018-09-10T13:42:08Z" finished-at="2018-09-10T13:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dp_Login -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.PaymentSettingsAdmin@31a5c39e]" name="beforeMethod" is-config="true" duration-ms="111" started-at="2018-08-21T11:21:43Z" finished-at="2018-08-21T11:21:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void runClasses.PaymentSettingsAdmin.dp_PaymentSettings() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="dp_PaymentSettings()[pri:1, instance:runClasses.PaymentSettingsAdmin@31a5c39e]" name="dp_PaymentSettings" duration-ms="11338" started-at="2018-08-21T11:21:43Z" finished-at="2018-08-21T11:21:54Z">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
-            <message>
-              <![CDATA[Element should have been "select" but was "span"
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'INCDSZLP00295', ip: '10.11.133.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'INCDSZLP00295', ip: '10.11.133.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
-at pageClasses.PaymentPage.selectDropdownValue(PaymentPage.java:50)
-at runClasses.PaymentSettingsAdmin.dp_PaymentSettings(PaymentSettingsAdmin.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dp_PaymentSettings -->
-      </class> <!-- runClasses.PaymentSettingsAdmin -->
+      </class> <!-- runClasses.DealerPortal_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Suite -->
 </testng-results>
