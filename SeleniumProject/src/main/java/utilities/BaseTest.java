@@ -25,6 +25,10 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 //import org.apache.commons.logging.LogFactory;
 //import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
@@ -52,34 +56,37 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class BaseTest {
 	
-		protected String browserName = "Chrome";
+		public String browserName = "";
 		protected DesiredCapabilities capabilities = new DesiredCapabilities(browserName,"",Platform.ANY);
 		protected WebDriver driver = null;
-		//protected String usr_name = "Pa-05769-100";
-		//protected String usr_pwd = "testid60";
 		protected HashMap<String,String> testData;
-		//protected String host = "dealerportal.sc2qa.dealerconnection.com";
-		
-
-		
-		
-		
-		
-		@BeforeTest
-		@Parameters({"usr_name", "usr_pwd"})
-		public void beforeTest(@Optional String usr_name, @Optional String usr_pwd) throws MalformedURLException{
-			//capabilities.setCapability("url", URL);
-			//System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
-			capabilities.setCapability("browserName", browserName);
-			capabilities.setCapability("user", usr_name);
-			capabilities.setCapability("password", usr_pwd);
-			//driver = new RemoteWebDriver(new URL("https://" + host + "/#/login"), capabilities);
 			
+		@BeforeTest
+		@Parameters("browserName")
+		public void beforeTest(String browserName) throws MalformedURLException{
+			Logger logger = Logger.getLogger("BaseTest");
+			
+			PropertyConfigurator.configure("log4j.properties");
+			
+			if(browserName.equalsIgnoreCase("firefox"))
+			{
+				capabilities.setCapability("browser", browserName);
+				System.setProperty("webdriver.gecko.driver","D:\\Automation\\geckodriver.exe");
+				logger.info("Browser Opened");
+				driver = new FirefoxDriver();
+			}
+			else if(browserName.equalsIgnoreCase("chrome"))
+			{
+				capabilities.setCapability("browser", browserName);
 				System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
+				logger.info("Browser Opened");
 				driver = new ChromeDriver();
-				driver.navigate().to("https://dealerportal.sc2qa.dealerconnection.com/#/login");
+			}
 				driver.manage().window().maximize();
+				driver.navigate().to("https://dealerportal.sc2qa.dealerconnection.com/#/login");
+				logger.info("URL Opened");
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				logger.info("Implicit Wait given");
 			
 			
 			

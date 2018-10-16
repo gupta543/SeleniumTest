@@ -61,7 +61,13 @@ public class DealerPortalDashboard extends BaseTest{
 	       case ITestResult.SUCCESS:
 	               tearReport(reports, logger);
 	              break;
-
-	       }      
+	              
+	             
 	 }
+	
+}
+
+	public static void main(String[] args) {
+		
+	}
 }

@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16986" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:11Z">
+  <suite name="Suite" duration-ms="41470" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16986" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:11Z">
-      <class name="runClasses.DealerPortal_Login">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="beforeTest" is-config="true" duration-ms="13544" started-at="2018-09-10T13:41:54Z" finished-at="2018-09-10T13:42:07Z">
+    <test name="Default test" duration-ms="41470" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:50Z">
+      <class name="runClasses.LenderRatesTable">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeTest" is-config="true" duration-ms="21617" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:31Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="beforeMethod" is-config="true" duration-ms="1095" started-at="2018-09-10T13:42:07Z" finished-at="2018-09-10T13:42:08Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeMethod" is-config="true" duration-ms="1379" started-at="2018-10-01T11:32:31Z" finished-at="2018-10-01T11:32:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void runClasses.DealerPortal_Login.dp_Login() throws java.lang.InterruptedException]]>
+                <![CDATA[public void runClasses.LenderRatesTable.dp_Login() throws java.lang.InterruptedException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.DealerPortal_Login@5702b3b1]" name="dp_Login" duration-ms="2313" started-at="2018-09-10T13:42:08Z" finished-at="2018-09-10T13:42:11Z">
+        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="dp_Login" duration-ms="2109" started-at="2018-10-01T11:32:32Z" finished-at="2018-10-01T11:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dp_Login -->
-      </class> <!-- runClasses.DealerPortal_Login -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeMethod" is-config="true" duration-ms="106" started-at="2018-10-01T11:32:34Z" finished-at="2018-10-01T11:32:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void runClasses.LenderRatesTable.dp_LenderRates() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="dp_LenderRates()[pri:1, instance:runClasses.LenderRatesTable@73846619]" name="dp_LenderRates" duration-ms="16217" started-at="2018-10-01T11:32:34Z" finished-at="2018-10-01T11:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dp_LenderRates -->
+      </class> <!-- runClasses.LenderRatesTable -->
     </test> <!-- Default test -->
   </suite> <!-- Suite -->
 </testng-results>

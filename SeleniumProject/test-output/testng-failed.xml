@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browserName" value="Chrome"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runClasses.DealerPortal_Login">
+      <class name="runClasses.LenderRatesTable">
         <methods>
           <include name="beforeTest"/>
-          <include name="dp_Login"/>
+          <include name="dp_LenderRates"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- runClasses.DealerPortal_Login -->
+      </class> <!-- runClasses.LenderRatesTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
