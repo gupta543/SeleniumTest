@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41470" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:50Z">
+  <suite name="Suite" duration-ms="25014" started-at="2018-10-16T09:35:59Z" finished-at="2018-10-16T09:36:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41470" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:50Z">
-      <class name="runClasses.LenderRatesTable">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeTest" is-config="true" duration-ms="21617" started-at="2018-10-01T11:32:09Z" finished-at="2018-10-01T11:32:31Z">
+    <test name="Default test" duration-ms="25014" started-at="2018-10-16T09:35:59Z" finished-at="2018-10-16T09:36:24Z">
+      <class name="runClasses.DealerPortal_Login">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:runClasses.DealerPortal_Login@29ca901e]" name="beforeTest" is-config="true" duration-ms="19110" started-at="2018-10-16T09:35:59Z" finished-at="2018-10-16T09:36:18Z">
           <params>
             <param index="0">
               <value>
@@ -18,37 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeMethod" is-config="true" duration-ms="1379" started-at="2018-10-01T11:32:31Z" finished-at="2018-10-01T11:32:32Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.DealerPortal_Login@29ca901e]" name="beforeMethod" is-config="true" duration-ms="3099" started-at="2018-10-16T09:36:18Z" finished-at="2018-10-16T09:36:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void runClasses.LenderRatesTable.dp_Login() throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void runClasses.DealerPortal_Login.dp_Login() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="dp_Login" duration-ms="2109" started-at="2018-10-01T11:32:32Z" finished-at="2018-10-01T11:32:34Z">
+        <test-method status="PASS" signature="dp_Login()[pri:0, instance:runClasses.DealerPortal_Login@29ca901e]" name="dp_Login" duration-ms="2773" started-at="2018-10-16T09:36:21Z" finished-at="2018-10-16T09:36:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dp_Login -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:runClasses.LenderRatesTable@73846619]" name="beforeMethod" is-config="true" duration-ms="106" started-at="2018-10-01T11:32:34Z" finished-at="2018-10-01T11:32:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void runClasses.LenderRatesTable.dp_LenderRates() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dp_LenderRates()[pri:1, instance:runClasses.LenderRatesTable@73846619]" name="dp_LenderRates" duration-ms="16217" started-at="2018-10-01T11:32:34Z" finished-at="2018-10-01T11:32:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dp_LenderRates -->
-      </class> <!-- runClasses.LenderRatesTable -->
+      </class> <!-- runClasses.DealerPortal_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Suite -->
 </testng-results>
